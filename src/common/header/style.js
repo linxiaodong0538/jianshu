@@ -7,9 +7,9 @@ export const HeaderWrapper = styled.div`
     border-bottom:1px solid #f0f0f0;
     position:relative;
     
-` 
+`
 export const Logo = styled.a.attrs({
-    herf:'/'
+    herf: '/'
 })`
     position:absolute;
     top:0;
@@ -40,9 +40,40 @@ export const NavItem = styled.div`
         color:#333;
     }
 `
+export const SearchWrapper = styled.div`
+    position:relative;
+    float:left;
+
+    .iconfont{
+        position:absolute;
+        right:5px;
+        bottom:5px;
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        line-height:30px;
+        text-align: center
+    }
+    .focused.iconfont{
+        background:#777;
+    }
+    .searchList{
+        overflow:hidden;
+    }
+`
 export const NavSearch = styled.input.attrs({
-    placeholder:'搜索'
+    placeholder: '搜索'
 })`
+&.slide-enter{
+    transition:all .4s ease-out;
+}
+&.slide-enter-active{
+    width:200px;
+}
+&.slide-exit{
+    transition:all .4s ease-out; 
+}
+
     width:160px;
     height:38px;
     border:none;
@@ -50,6 +81,9 @@ export const NavSearch = styled.input.attrs({
     margin-top:9px;
     background:#eee;
     padding:0 20px;
+    &.focused{
+        width:200px;
+    }
     
 `
 
@@ -74,4 +108,37 @@ export const Button = styled.div`
         color:#fff;
         background:#ec6149;
     }
+`
+
+export const SearchInfo = styled.div`
+position:absolute;
+right:0;
+top:56px;
+width:240px;
+padding:0 20px;
+box-shadow:0 0 8px rgba(0,0,0,.2)
+`
+export const SearchInfoTitle = styled.div`
+    margin-top:20px;
+    margin-bottom:15px;
+    line-height:20px;
+
+`
+export const SearchInfoSwith = styled.span`
+    float:right;
+    font-size:12px;
+
+`
+
+export const SearchInfoItem = styled.a`
+    font-size:12px;
+    line-height:20px;
+    padding:0 5px;
+    border: 1px solid #ddd;
+    color:#969696;
+    border-radius:2px;
+    display:block;
+    float:left;
+    margin-right:10px;
+    margin-bottom:15px;
 `

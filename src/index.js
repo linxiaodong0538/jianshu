@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './style';
-// import './static/icon-font/iconfont'
+import './static/icon-font/iconfont.css'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

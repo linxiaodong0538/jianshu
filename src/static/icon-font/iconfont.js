@@ -1,1 +1,21 @@
-!function(d){var e,n='<svg><symbol id="iconqianbipencil82" viewBox="0 0 1024 1024"><path d="M895.856847 313.16299l-78.107152 78.107152L632.709534 206.228687l78.069657-78.107152c26.508929-26.508929 53.017859 0 53.017859 0l132.059798 132.022303C895.856847 260.145131 922.365776 286.654061 895.856847 313.16299zM116.361413 907.654465l224.336162-39.37099L155.246261 682.832162 116.361413 907.654465zM181.262584 657.661414l185.06602 185.06602 423.00897-423.00897L604.271554 234.652444 181.262584 657.661414z"  ></path></symbol><symbol id="iconwj-bjb" viewBox="0 0 1024 1024"><path d="M847.5 960h-640c-52.9 0-96-43.1-96-96v-97h64v97c0 17.6 14.4 32 32 32h640c17.6 0 32-14.4 32-32V160c0-17.6-14.4-32-32-32h-640c-17.6 0-32 14.4-32 32v95.1h-64V160c0-52.9 43.1-96 96-96h640c52.9 0 96 43.1 96 96v704c0 52.9-43.1 96-96 96z"  ></path><path d="M112.5 384h64v256h-64zM80.5 288h128v64h-128zM80.5 672h128v64h-128zM768 352H320c-17.7 0-32-14.3-32-32s14.3-32 32-32h448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM768 544H320c-17.7 0-32-14.3-32-32s14.3-32 32-32h448c17.7 0 32 14.3 32 32s-14.3 32-32 32zM768 737H320c-17.7 0-32-14.3-32-32s14.3-32 32-32h448c17.7 0 32 14.3 32 32s-14.3 32-32 32z"  ></path></symbol></svg>',t=(e=document.getElementsByTagName("script"))[e.length-1].getAttribute("data-injectcss");if(t&&!d.__iconfont__svg__cssinject__){d.__iconfont__svg__cssinject__=!0;try{document.write("<style>.svgfont {display: inline-block;width: 1em;height: 1em;fill: currentColor;vertical-align: -0.1em;font-size:16px;}</style>")}catch(e){console&&console.log(e)}}!function(e){if(document.addEventListener)if(~["complete","loaded","interactive"].indexOf(document.readyState))setTimeout(e,0);else{var t=function(){document.removeEventListener("DOMContentLoaded",t,!1),e()};document.addEventListener("DOMContentLoaded",t,!1)}else document.attachEvent&&(o=e,c=d.document,i=!1,(s=function(){try{c.documentElement.doScroll("left")}catch(e){return void setTimeout(s,50)}n()})(),c.onreadystatechange=function(){"complete"==c.readyState&&(c.onreadystatechange=null,n())});function n(){i||(i=!0,o())}var o,c,i,s}(function(){var e,t;(e=document.createElement("div")).innerHTML=n,n=null,(t=e.getElementsByTagName("svg")[0])&&(t.setAttribute("aria-hidden","true"),t.style.position="absolute",t.style.width=0,t.style.height=0,t.style.overflow="hidden",function(e,t){t.firstChild?function(e,t){t.parentNode.insertBefore(e,t)}(e,t.firstChild):t.appendChild(e)}(t,document.body))})}(window);
+// import {createGlobalStyle} from 'styled-components';
+
+
+// createGlobalStyle`
+// @font-face {font-family: "iconfont";
+//   src: url('./iconfont.eot?t=1561190685955'); /* IE9 */
+//   src: url('./iconfont.eot?t=1561190685955#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//   url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANEAAsAAAAAB2wAAAL2AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqCSIIpATYCJAMMCwgABCAFhG0HQRt6BsgOJS3BwADgAUFgBNVY2bO7R3sP7JDkv+byzwm7RDFaIOGiZIyOMGzE/a+t9k/M052Kjm929GVz4jkxSpNORCrm9eC1dVRQQcteHE6bQmO/ZYGkPMe2qMvSOKDAxpoUJTrOA/IeYwO1291PoJqSw+OgrWcE/BXmsEDcwgoH/hmPovDxttCsmFvEN2hop/ee74Cvwefjv6LwJ2lk5kGHN1tFaPh17de2F3MzVzODd9OZwC8iYwMoxPVKy0VeUWSDl6qKvLVy0FSENJXf7SbgaLLmRv94iWgyc/vACqqSi+I6DILf22zEIQ9uouIG8AqwY0VZq+ay4G0i+l78cmRs/N6NmNFzl1bGx7JHlbHV0JdfUj2CvLsTFPbxXpzP+buBoR9ugxrfv5aHvfic4n3101qQZ70cBDWR73kYfOruzr2gkI932O2RJLnCs7239/VrXKfgf+zthf8p/OL4mf7m9cXXr2/ehE1gS8M7NurPNXChEaEsJCLEBhHDXecb5v1HGbNG4+340QJS3wAN0/Oswap4uG2HRiRHhHoNIW9TrHZnWADo/c2nvSKDmO312Kvhb/zGs+bM+HxYzb92UAE/SzxT0NWzvaGbDbTP1Rq8e27HmqLJUWlROA7HiGen/O5MrWp2PTAdI74Pl413ziW0jSeQtExC1raALNgNaOjahKa2bajWtS/uGkV4idLBmgOAMOQRJAN+QDbkPbJgv0HDhN/QNBReUJ1H1JpdS4EDm4nEUUlE/CrCgmnItp4GhvlDkrKocSTND8hjEnFhPyrMK8jH2yVDIlNMcC0pRZTKSCamjtrgMEnTTGQR0ykJNM9BqVWVny9XPSlPMHUItI+QcCiJCOGtQjCBySB7zanAwvuHSBSLNBzSUFVlHiMhXHD7SKE8BR2Q7RKjU9WtPOKyRFGEomSIjDDpkDYwSTQrYkKs6l5OEgGVxzEgZKmST+rJXSV5y8v099sClXl1jhQ5ioH7mDN4bEmGgLWKIt9lZy7v5AEAAAA=') format('woff2'),
+//   url('./iconfont.woff?t=1561190685955') format('woff'),
+//   url('./iconfont.ttf?t=1561190685955') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+//   url('./iconfont.svg?t=1561190685955#iconfont') format('svg'); /* iOS 4.1- */
+// }
+
+// .iconfont {
+//   font-family: "iconfont" !important;
+//   font-size: 16px;
+//   font-style: normal;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+// `
