@@ -17,12 +17,13 @@ class Header extends React.Component{
                 <SearchInfoSwith>换一换</SearchInfoSwith>
                 </SearchInfoTitle>
                 <div className="searchList">
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
+                    
+                    {
+                      this.props.list.map((item)=>{
+                        return <SearchInfoItem key={item}>{item}</SearchInfoItem>
+                      })
+                    }
+
                 </div>
             </SearchInfo>
         } else {
@@ -54,7 +55,7 @@ class Header extends React.Component{
                 </SearchWrapper>
             </Nav>
             <Addition>
-                <Button className="reg">注册{console.log(this)}</Button>
+                <Button className="reg">注册</Button>
                 <Button className="writting">写文章</Button>
             </Addition>
         </HeaderWrapper>
@@ -69,16 +70,18 @@ class Header extends React.Component{
 
 
 const mapStateToProps = (state /*, ownProps*/) => {
-    console.log(state)
+    // console.log(state)
     return {
-        focused: state.get('headerReducer').get('focused')
+        focused: state.get('headerReducer').get('focused'),
         // focused: state.getIn(['headerReducer'],['focused'])
+        list:state.getIn(['headerReducer','list'])
     }
 }
 const mapDispatchToProps = (dispatch) => {
     return {
         handleInputFocus() {
             const action = actionCreators.searchFocus()
+            dispatch(actionCreators.getList())
             dispatch(action)
         },
         handleInputBlur() {
