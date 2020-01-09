@@ -8,9 +8,8 @@ export const HeaderWrapper = styled.div`
     position:relative;
     
 `
-export const Logo = styled.a.attrs({
-    herf: '/'
-})`
+export const Logo = styled.div`
+
     position:absolute;
     top:0;
     left:0;
@@ -41,10 +40,9 @@ export const NavItem = styled.div`
     }
 `
 export const SearchWrapper = styled.div`
-    position:relative;
+position:relative;
     float:left;
-
-    .iconfont{
+    .zoom{
         position:absolute;
         right:5px;
         bottom:5px;
@@ -54,11 +52,8 @@ export const SearchWrapper = styled.div`
         line-height:30px;
         text-align: center
     }
-    .focused.iconfont{
+    .focused.zoom{
         background:#777;
-    }
-    .searchList{
-        overflow:hidden;
     }
 `
 export const NavSearch = styled.input.attrs({
@@ -84,7 +79,6 @@ export const NavSearch = styled.input.attrs({
     &.focused{
         width:200px;
     }
-    
 `
 
 export const Addition = styled.div`
@@ -111,8 +105,9 @@ export const Button = styled.div`
 `
 
 export const SearchInfo = styled.div`
+background:#fff;
 position:absolute;
-right:0;
+left:0;
 top:56px;
 width:240px;
 padding:0 20px;
@@ -122,12 +117,18 @@ export const SearchInfoTitle = styled.div`
     margin-top:20px;
     margin-bottom:15px;
     line-height:20px;
-
 `
 export const SearchInfoSwith = styled.span`
     float:right;
     font-size:12px;
-
+    .spin{
+        display:block;
+        float:left;
+        padding-right:4px;
+        transition: all .5s ease-in;
+   
+        transform-origin:center center;
+    }
 `
 
 export const SearchInfoItem = styled.a`
